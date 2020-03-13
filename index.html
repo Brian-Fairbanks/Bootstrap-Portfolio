@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html class="h-100">
 
 
     <head>
+        <title>Brian Fairbanks - Index</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="mystyles.css">
 
@@ -13,30 +14,43 @@
     </head>
 
 
-    <body>
-        <main class="grid">
+    <body class="h-100">
+        <!-- html, body, and main elements all set to 100% height using bootstrap.  This will ensure that the footer aligns with the very bottom of the page, no matter how big/small the content above it 
+        also note, margin auto on all sides, and 0 padding.  Flex-column required, as the container is a flex box and will want to push everything horizontally-->
+        <main class="cover-container d-flex w-100 h-100 p-0 mx-auto flex-column">
 
-            <!-- row one - header
-                will have my header, including my name, and the nav bar.
-                will always fill the space, but will push the nav bar to a second row if under ~760px-->
-            <header>
-                <div class="inner container row">
+
+            <!-- Header
+            will have my header, including my name, and the nav bar.
+            will always fill the space, but will push the nav bar to a second row if under ~760px-->
+            <header class="bg-light sticky-top">
+                <!-- everything sits in a container "inner" to center it along the top, and add margins to the sides of the headd-->
+                <div class="inner container-sm row p-0">
                     <!-- my name-->
-                    <div class="header col-sm orange">
+                    <div class="brand col-sm-5 orange">
                         <h1>
                             Brian Fairbanks
                         </h1>
                     </div>
-                    <!-- a spacer class included here, that should only show up on larger screens-->
-                    <!-- <div class="spacer col-sm"></div> -->
                     <!-- my navbar -->
-                    <nav class="navbar col-sm">
-                        <a class="nav-link active" href="index.html">About</a>|
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>|
-                        <a class="nav-link" href="contact.html">Contact</a>
+                    <!-- according to bootstrap documentation, navbar needs .navebar and .navbar-expand-[size]-->
+                    <nav class="navbar navbar-expand-sm col-sm justify-content-center">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
                     </nav>
                 </div>
             </header>
+
+
 
             <!--Row 2 - main
                 This box will be the only one that changes between the different files-->
@@ -47,31 +61,42 @@
                     <!-- image of myself -->
                     <img class="img-thumbnail about-img float-left" src="Assets/self.png" alt="Brian Fairbanks with his first dog, Kraken" title="Brian Fairbanks with his first dog, Kraken">
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque iste eius optio neque corporis sequi sed enim molestiae consequuntur. Non similique quod provident veniam illo id veritatis est 
-                        molestias quo vel perferendis excepturi iste eaque, cum maiores voluptatibus perspiciatis necessitatibus eligendi reprehenderit, cumque neque. Voluptates pariatur ex quibusdam nostrum adipisci!
+                        Brian Fairbanks, 28, lives in Pflugerville, Texas with his fiance, Amanda, and their two Miniature Schnauzers, Kraken (pictured) and Mochi.
                     </p>
                     <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores incidunt quasi, doloremque voluptatem error atque quam consequuntur, animi dolor earum explicabo numquam natus, voluptatum 
-                        similique ratione dolorum exercitationem excepturi? Odio et cumque, unde distinctio autem repellat esse consequatur ipsa maiores consequuntur accusantium pariatur quas laborum. Nemo dolores 
-                        veniam nobis voluptatibus nihil ea incidunt iusto, eum animi, alias explicabo voluptatum odit qui minus culpa corporis laudantium eos. Iure dolor architecto maxime repudiandae commodi amet 
-                        ducimus iste. Quod, cum. Autem, repellat ullam!
-
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores incidunt quasi, doloremque voluptatem error atque quam consequuntur, animi dolor earum explicabo numquam natus, voluptatum 
-                        similique ratione dolorum exercitationem excepturi? Odio et cumque, unde distinctio autem repellat esse consequatur ipsa maiores consequuntur accusantium pariatur quas laborum. Nemo dolores 
-                        veniam nobis voluptatibus nihil ea incidunt iusto, eum animi, alias explicabo voluptatum odit qui minus culpa corporis laudantium eos. Iure dolor architecto maxime repudiandae commodi amet 
-                        ducimus iste. Quod, cum. Autem, repellat ullam!
-                        
+                        Brian's higher education began during his highschool years, where he attended japanese classes at Austin Community College in the late evenings.  This culminated in a one-month, homestay,
+                        study abroad trip to Japan through Texas State University's program.</p>
+                    <p>
+                        Brian attended Texas Tech University - Edward E. Whitacre, Jr. College of Engineering between 2010 to 2015,
+                        whilst he developed code part-time for a small electric co-op, as their sole programmer.  He  attained his Bachelor of Science in Computer Science, as one of only
+                        six students to complete the curriculum in spring, 2015.  In this time, he also completed his minors in Business and Japanese Linguistics.
                     </p>
+                    <p>
+                        He is currently unemployeed, but is taking this opportunity to brush up on his technical skills, attending the UT Coding Bootcamp, as well as taking Certification courses through Linux Academy.
+                        He has recently become LPI Certified for <a target="_blank" href="https://cs.lpi.org/caf/Xamman/certification/verify/LPI000443073/m5vp2vp35q">Linux Essentials</a> and in the process of prepping for the Azure Fundamentals exam.
+                    </p>
+                    <p>
+                        He has previously held a number of coding/design positions including:
+                        <ul>
+                            <li>Senior Business Systems Analyst at Dell Technologies</li>
+                            <li>DAO Backlog Lead Developer at Dell Technologies</li>
+                            <li>General IT/Web Developer for South Plains Electric Co-op</li>
+                            <li>Freelance Web Design</li>
+                        </ul>
+                    </p>
+
                 </div>
             </article>
 
             <!-- row 3 - footer
             -->
+            <footer class="mastfoot orange mt-auto pt-2">
+                <section class="inner text-center brown text-light p-1">
+                    &copy Copyright 2020
+                </section>
+            </footer>
         </main>
-        <footer class="footer orange sticky-bottom">
-            <section class="footer-content text-center brown">
-                &copy Copyright 2020
-            </section>
-        </footer>
+
+        <!-- close out all tags -->
     </body>
 </html>

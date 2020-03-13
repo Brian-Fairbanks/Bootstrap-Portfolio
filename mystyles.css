@@ -21,23 +21,20 @@ body{
     color:#333;
     background:#ccc;
 }
+/*
+    Header
+*/
 
 header{
-    background:#fff;
     border-bottom:#999 2px solid;
 }
+
 .inner{
     margin:auto;
 }
-.navbar{
-    float:right;
-    display:flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height:100%;
-}
-nav a{
-    color:#222;
+
+.nav-link{
+    color:#333;
 }
 nav .active{
     text-shadow: #D96936 0 0 10px;
@@ -53,6 +50,9 @@ h1{
     text-align:center;
 }
 
+/*
+    Main Body
+*/
 h2{
     color:#4E6CC2;
 }
@@ -70,17 +70,8 @@ h2{
     margin-right:20px;
 }
 
-.footer-content{
-    padding:10px;
-    margin-top:10px;
-    color:#eee;
-}
-.footer{
-    width:100%;
-    margin-top:30px;
-}
+/*
+Footer
 
-.sticky-bottom{
-    position:fixed;
-    bottom:0px;
-}
+no code needed anymore, did everything with bootstrap
+*/
