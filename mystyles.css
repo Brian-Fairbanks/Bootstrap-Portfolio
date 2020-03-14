@@ -33,6 +33,10 @@ header{
     margin:auto;
 }
 
+.navbar{
+    justify-content: center;
+}
+
 .nav-link{
     color:#333;
 }
@@ -75,3 +79,8 @@ Footer
 
 no code needed anymore, did everything with bootstrap
 */
+@media screen and (min-width: 768px) {
+    .navbar{
+        justify-content: flex-end;
+    }
+}

@@ -4,9 +4,16 @@
 
     <head>
         <title>Brian Fairbanks - Index</title>
+        <!-- favicon -->
+        <link rel="shortcut icon" href="favicon.ico" />
+
+        <meta name="viewport" content= "width-device-width, initial-scale=1">
+
+        <!-- CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="mystyles.css">
 
+        <!-- JS -->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -34,7 +41,7 @@
                     </div>
                     <!-- my navbar -->
                     <!-- according to bootstrap documentation, navbar needs .navebar and .navbar-expand-[size]-->
-                    <nav class="navbar navbar-expand-md col-md justify-content-center">
+                    <nav class="navbar navbar-expand-md col-md">
                         <ul class="nav">
                             <li class="nav-item">
                                 <a class="nav-link active" href="index.html">About</a>
@@ -52,46 +59,58 @@
 
 
 
-            <!--Row 2 - main
+            <!--Row 1 - main
                 This box will be the only one that changes between the different files-->
             <article class="row main">
                 <div class="container-md bg-white content"> <!-- main-->
                     <h2>About Me</h2>
                     <hr>
                     <!-- image of myself -->
-                    <img class="img-thumbnail about-img float-left" src="Assets/self.png" alt="Brian Fairbanks with his first dog, Kraken" title="Brian Fairbanks with his first dog, Kraken">
-                    <p>
-                        Brian Fairbanks, 28, lives in Pflugerville, Texas with his fiance, Amanda, and their two Miniature Schnauzers, Kraken (pictured) and Mochi.
-                    </p>
-                    <p>
-                        Brian's higher education began during his highschool years, where he attended japanese classes at Austin Community College in the late evenings.  This culminated in a one-month, homestay,
-                        study abroad trip to Japan through Texas State University's program.</p>
-                    <p>
-                        Brian attended Texas Tech University - Edward E. Whitacre, Jr. College of Engineering between 2010 to 2015,
-                        whilst he developed code part-time for a small electric co-op, as their sole programmer.  He  attained his Bachelor of Science in Computer Science, as one of only
-                        six students to complete the curriculum in spring, 2015.  In this time, he also completed his minors in Business and Japanese Linguistics.
-                    </p>
-                    <p>
-                        He is currently unemployeed, but is taking this opportunity to brush up on his technical skills, attending the UT Coding Bootcamp, as well as taking Certification courses through Linux Academy.
-                        He has recently become LPI Certified for <a target="_blank" href="https://cs.lpi.org/caf/Xamman/certification/verify/LPI000443073/m5vp2vp35q">Linux Essentials</a> and in the process of prepping for the Azure Fundamentals exam.
-                    </p>
-                    <p>
-                        He has previously held a number of coding/design positions including:
-                        <ul>
-                            <li>Senior Business Systems Analyst at Dell Technologies</li>
-                            <li>DAO Backlog Lead Developer at Dell Technologies</li>
-                            <li>General IT/Web Developer for South Plains Electric Co-op</li>
-                            <li>Freelance Web Design</li>
-                        </ul>
-                    </p>
+
+                    <!-- the first one will float left, and display only when medium or bigger-->
+                    <div class="w-50 d-none d-md-block float-left mr-4" >
+                        <img class="img-fluid img-thumbnail" src="Assets/self.png" alt="Brian Fairbanks with his first dog, Kraken" title="Brian Fairbanks with his first dog, Kraken">
+                    </div>
+                    <!-- the scond one here will expand to the full screen, but only be visable on small screens-->
+                    <div class="container-fluid d-block d-md-none mb-2" >
+                        <img class="img-fluid img-thumbnail" src="Assets/self-s.png" alt="Brian Fairbanks with his first dog, Kraken" title="Brian Fairbanks with his first dog, Kraken">
+                    </div>
+
+                    <!--  About Me text content  -->
+                    <article>
+                        <p>
+                            Brian Fairbanks, 28, lives in Pflugerville, Texas with his fiance, Amanda, and their two Miniature Schnauzers, Kraken (pictured) and Mochi.
+                        </p>
+                        <p>
+                            Brian's higher education began during his highschool years, where he attended japanese classes at Austin Community College in the late evenings.  This culminated in a one-month, homestay,
+                            study abroad trip to Japan through Texas State University's program.</p>
+                        <p>
+                            Brian attended Texas Tech University - Edward E. Whitacre, Jr. College of Engineering between 2010 to 2015,
+                            whilst he developed code part-time for a small electric co-op, as their sole programmer.  He  attained his Bachelor of Science in Computer Science, as one of only
+                            six students to complete the curriculum in spring, 2015.  In this time, he also completed his minors in Business and Japanese Linguistics.
+                        </p>
+                        <p>
+                            He is currently unemployeed, but is taking this opportunity to brush up on his technical skills, attending the UT Coding Bootcamp, as well as taking Certification courses through Linux Academy.
+                            He has recently become LPI Certified for <a target="_blank" href="https://cs.lpi.org/caf/Xamman/certification/verify/LPI000443073/m5vp2vp35q">Linux Essentials</a> and in the process of prepping for the Azure Fundamentals exam.
+                        </p>
+                        <p>
+                            He has previously held a number of coding/design positions including:
+                            <ul>
+                                <li>Senior Business Systems Analyst at Dell Technologies</li>
+                                <li>DAO Backlog Lead Developer at Dell Technologies</li>
+                                <li>General IT/Web Developer for South Plains Electric Co-op</li>
+                                <li>Freelance Web Design</li>
+                            </ul>
+                        </p>
+                    </article>
 
                 </div>
             </article>
 
-            <!-- row 3 - footer
+            <!-- row 2 - footer
             -->
             <footer class="mastfoot orange mt-auto pt-2">
-                <section class="inner text-center brown text-light p-1">
+                <section class="inner text-center brown text-light p-3">
                     &copy Copyright 2020
                 </section>
             </footer>
