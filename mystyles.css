@@ -26,7 +26,7 @@ body{
 */
 
 header{
-    border-bottom:#999 2px solid;
+    border-bottom:#6C3521 2px solid;
 }
 
 .inner{
@@ -42,18 +42,19 @@ header{
     font-weight:bold;
 }
 nav .active{
+    color:#6C3521;
     text-shadow: #D96936 0px 0px 2px;
 }
 
 .title{
     text-align:center;
 }
-
+/* 
 h1{
     color:#eee;
     padding:10px;
     text-align:center;
-}
+} */
 
 /*
     Main Body
