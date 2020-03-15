@@ -35,7 +35,7 @@ header{
 }
 
 .nav-link{
-    color:#555;
+    color:#6C3521;
     font-weight:bold;
 }
 nav .active{
@@ -47,6 +47,13 @@ nav .active{
     text-align:center;
 }
 
+a {
+    color:#D96936;
+}
+a:hover{
+    color:#D96936;
+    text-shadow:0px 0px 2px #CCC476;
+}
 
 /*
     Main Body
@@ -76,6 +83,14 @@ h2{
     border:1px solid #D96936;
     box-shadow:2px 2px 4px rgba(0,0,0,.6)
 }
+.port-card:hover{
+    border:1px solid #CCC476;
+    box-shadow:0px 0px 4px #D96936;
+}
+
+.port-card a{
+    text-decoration: none!important;
+}
 
 .port-text{
     top:-3.25em;
@@ -88,9 +103,7 @@ h2{
     transform: rotate(-20deg);
 }
 
-.port-text:hover{
-    text-decoration: none;
-}
+
 
 .fa-icon-only, .fab{
     color:#6C3521;
