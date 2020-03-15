@@ -19,7 +19,8 @@ https://coolors.co/ccc476-4e6cc2-d96936-edaaa2-6c3521
 
 body{
     color:#333;
-    background:#ccc;
+    background-image: url("Assets/backtile.jpg");
+    background-repeat: repeat;
 }
 /*
     Header
