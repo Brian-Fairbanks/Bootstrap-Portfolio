@@ -62,9 +62,96 @@
             <!--Row 1 - main
                 This box will be the only one that changes between the different files-->
             <article class="row main">
-                <div class="container-md bg-white content"> <!-- main-->
+                <div class="container-md bg-light content">
                     <h2>Portfolio</h2>
                     <hr>
+
+
+                    <!-- Portfolio grid - set up as a single card per row, or a 2x grid when above md -->
+                    <div class="row m-auto">
+
+                        <!-- Project 1 -->
+                        <div class="col-sm-12 col-md-6 p-3">    <!-- Setup rows for each portfolio element to sit 2 across, or 1 across on a small screen -->
+                            <div class="port-card m-auto">      <!-- My own instance of a card.  the image fills the size, and then the port-text will overlay on the image.  This class in css fully controls the size of each card-->
+                                <a target="_blank" href="https://github.com/Brian-Fairbanks/Procedural-Terrain-Test">
+                                    <img class="img-fluid h-100 w-100" src="Assets/procTerGen.jpg"> <!-- The image will squash to fit, but ideally I would use 3/2 aspect ratio images -->
+                                    <div class="port-text position-relative text-center shadow-sm">
+                                        Endless Terrain Generator
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Placeholder for Project 2-->
+                        <div class="col-sm-12 col-md-6 p-3">    
+                            <div class="port-card m-auto">
+                                <a  target="_blank"  href="#">
+                                    <img class="img-fluid h-100 w-100" src="https://via.placeholder.com/300x200">
+                                    <div class="port-text position-relative text-center shadow-sm">
+                                        Project 2
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Placeholder for Project 3-->
+                        <div class="col-sm-12 col-md-6 p-3">    
+                            <div class="port-card m-auto">
+                                <a  target="_blank"  href="#">
+                                    <img class="img-fluid h-100 w-100" src="https://via.placeholder.com/300x200">
+                                    <div class="port-text position-relative text-center shadow-sm">
+                                        Project 3
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Placeholder for Project 4 -->
+                        <div class="col-sm-12 col-md-6 p-3">    
+                            <div class="port-card m-auto">
+                                <a  target="_blank"  href="#">
+                                    <img class="img-fluid h-100 w-100" src="https://via.placeholder.com/500">
+                                    <div class="port-text position-relative text-center shadow-sm">
+                                        Project 4
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Placeholder for Project 5-->
+                        <div class="col-sm-12 col-md-6 p-3">    
+                            <div class="port-card m-auto">
+                                <a  target="_blank"  href="#">
+                                    <img class="img-fluid h-100 w-100" src="https://via.placeholder.com/200x400">
+                                    <div class="port-text position-relative text-center shadow-sm">
+                                        Project 5
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        
+
+
+                        <!-- Template for Easier Replication in the future -->
+                        <!-- 
+                        <div class="col-sm-12 col-md-6 p-3">    
+                            <div class="port-card m-auto">
+                                <a  target="_blank"  href="#">
+                                    <img class="img-fluid h-100 w-100" src="https://via.placeholder.com/500">
+                                    <div class="port-text position-relative text-center shadow-sm">
+                                        Project 1
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                         -->
+
+                        
+
+
+
+                    </div>
 
 
                 </div>

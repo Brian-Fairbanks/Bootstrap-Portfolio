@@ -74,6 +74,31 @@ h2{
     margin-right:20px;
 }
 
+/* Portflio / cards */
+.port-card{
+    width:300px;
+    height:200px;
+    overflow:hidden;
+    border:1px solid #D96936;
+    box-shadow:2px 2px 4px rgba(0,0,0,.6)
+}
+
+.port-text{
+    top:-3.25em;
+    left:1em;
+    color:#CCC476;
+    background:#D96936;
+    border-top:1px solid #CCC476;
+    border-bottom:3px solid #6C3521;
+    padding:2px 0px;
+    padding-left:25px;
+    transform: rotate(-20deg);
+}
+
+.port-text:hover{
+    text-decoration: none;
+}
+
 /*
 Footer
 
