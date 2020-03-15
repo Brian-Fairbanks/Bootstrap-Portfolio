@@ -18,6 +18,10 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
+        <!-- Font Awesome used for Icons -->
+        <script src="https://kit.fontawesome.com/9aa3b96097.js" crossorigin="anonymous"></script>
+
+
     </head>
 
 
@@ -62,9 +66,98 @@
             <!--Row 1 - main
                 This box will be the only one that changes between the different files-->
             <article class="row main">
-                <div class="container-md bg-light content"> <!-- main-->
+                <div class="container-md bg-light content"> <!-- main content -->
+                    <!--Section heading-->
                     <h2>Contact Me</h2>
                     <hr>
+                    <!--Section description-->
+                    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact me directly. I would love to get back to you as soon as I can.</p>
+
+                                <!-- https://mdbootstrap.com/docs/jquery/forms/contact/ -->
+                    <section class="mb-4" id="contact-form">
+                    
+                        <div class="row">
+                    
+                            <!--Grid Email Contact -->
+                            <div class="col-md-8 mb-md-0 mb-5">
+                                <form id="contact-form" name="contact-form" action="mail.php" method="POST">    <!-- I assume the plan is to add php to this when we get into the backend later on -->
+                    
+                                    <!--Grid row for your information-->
+                                    <div class="row">
+                    
+                                        <!--Grid column for your name-->
+                                        <div class="col-md-6">
+                                            <div class="md-form mb-0">
+                                                <input type="text" id="name" name="name" class="form-control">
+                                                <label for="name" class="">Your name</label>
+                                            </div>
+                                        </div>
+                    
+                                        <!--Grid column for return email address-->
+                                        <div class="col-md-6">
+                                            <div class="md-form mb-0">
+                                                <input type="text" id="email" name="email" class="form-control">
+                                                <label for="email" class="">Your email</label>
+                                            </div>
+                                        </div>
+                    
+                                    </div>
+                    
+                                    <!--Grid row  for email subject-->
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="md-form mb-0">
+                                                <input type="text" id="subject" name="subject" class="form-control">
+                                                <label for="subject" class="">Subject</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                    
+                                    <!--Grid row for message-->
+                                    <div class="row">
+                    
+                                        <!--Grid column for message-->
+                                        <div class="col-md-12">
+                    
+                                            <div class="md-form">
+                                                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                                <label for="message">Your message</label>
+                                            </div>
+                    
+                                        </div>
+                                    </div>
+                    
+                                </form>
+                                <!-- Button to Submit Contact Form -->
+                                <div class="text-center text-center">
+                                    <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a> <!-- setting up for the javascript to send via with ajax later -->
+                                </div>
+                                <div class="status"></div>
+                            </div>
+
+
+                    
+                            <!--Grid column for My information -->
+                            <div class="col-md-4 text-center">
+                                <ul class="list-unstyled mb-0">
+                                    <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                                        <p>Pflugerville, TX, 78660, USA</p>
+                                    </li>
+                    
+                                    <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                                        <p>+1 (512) 789 - 4483</p>
+                                    </li>
+                    
+                                    <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                                        <p>brian.k.fairbanks@gmail.com</p>
+                                    </li>
+                                </ul>
+                            </div>                    
+                        </div>
+                    
+                    </section>
+
+
 
 
                 </div>

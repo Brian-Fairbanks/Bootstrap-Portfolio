@@ -38,10 +38,11 @@ header{
 }
 
 .nav-link{
-    color:#333;
+    color:#555;
+    font-weight:bold;
 }
 nav .active{
-    text-shadow: #D96936 0 0 10px;
+    text-shadow: #D96936 0px 0px 2px;
 }
 
 .title{
@@ -86,7 +87,6 @@ h2{
 .port-text{
     top:-3.25em;
     left:1em;
-    color:#CCC476;
     background:#D96936;
     border-top:1px solid #CCC476;
     border-bottom:3px solid #6C3521;
