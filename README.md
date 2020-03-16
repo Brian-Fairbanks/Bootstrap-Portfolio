@@ -16,15 +16,15 @@ Responsive design ensures that web applications render well on a variety of devi
    * Responsive images - My images wound up being a bit less openly responsive than inteneded.  The one clear example is on my about me page, only on small mobile screens.
     this image instead floats left at a fixed size when extending past 756px.
 
-    * Make a sticky footer - Confusingly, not the same as a position:sticky footer.  I implemented this using a flex-box method
-    * and use sub-rows and sub-columns on your portfolio site
+   * Make a sticky footer - Confusingly, not the same as a position:sticky footer.  I implemented this using a flex-box method
+   * and use sub-rows and sub-columns on your portfolio site
 
-    * The Bootstrap portfolio should minimize the use of media queries outside bootstrap - I used none.
-    * Each page must have valid and correct HTML. - HTML validation service reports 0 errors
-    * Implement accurate HTML Symantic elements - I learned how to better manage these, and have gotten away from pure divs
+   * The Bootstrap portfolio should minimize the use of media queries outside bootstrap - I used none.
+   * Each page must have valid and correct HTML. - HTML validation service reports 0 errors
+   * Implement accurate HTML Symantic elements - I learned how to better manage these, and have gotten away from pure divs
 
 ### Portfolio
-    * I made use Bootstrap's grid system (containers, rows, and columns) to appropriately create a shinking grid to display my project cards.
+   * I made use Bootstrap's grid system (containers, rows, and columns) to appropriately create a shinking grid to display my project cards.
 
 ### Contact
-    * I discovered and made use of FontAwesome to implement a variety of icons, representing links to my social accounts.
+   * I discovered and made use of FontAwesome to implement a variety of icons, representing links to my social accounts.
