@@ -61,18 +61,21 @@ a:hover{
 h2{
     color:#4E6CC2;
 }
+h3{
+    color:#4E6CC2;
+    text-decoration: underline;
+    text-align:center;
+}
 
 .main{
     margin:30px;
 }
 
-.content{
-    /* max-width:700px; */
-}
 .about-img{
     max-height:200px;
     margin-right:20px;
 }
+
 
 /* Portflio / cards */
 .port-card{
