@@ -54,6 +54,13 @@ a:hover{
     color:#D96936;
     text-shadow:0px 0px 2px #CCC476;
 }
+.card-footer a{
+    color:#CCC476;
+}
+.card-footer a:hover{
+    color:#CCC476;
+    text-shadow:0px 0px px #ddd;
+}
 
 /*
     Main Body
