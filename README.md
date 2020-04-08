@@ -1,4 +1,5 @@
 # Responsive Portfolio
+[Hosted on Github](https://brian-fairbanks.github.io/Bootstrap-Portfolio/)
 
 This goal of this project was to familiarize myself with the Bootstrap Framework, and learn best practices for Responsive design, while generating something practical.
 
