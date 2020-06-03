@@ -1,208 +1,164 @@
 <!DOCTYPE html>
 <html class="h-100" lang="en">
 
-    <head>
-        <title>Brian Fairbanks - Contact</title>
-        <!-- favicon -->
-        <link rel="shortcut icon" href="favicon.ico" />
+<head>
+    <title>Brian Fairbanks - Contact</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico" />
 
-        <meta name="viewport" content= "width-device-width, initial-scale=1">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="mystyles.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="mystyles.css">
 
-    </head>
+</head>
 
 
-    <body class="h-100">
-        <!-- html, body, and main elements all set to 100% height using bootstrap.  This will ensure that the footer aligns with the very bottom of the page, no matter how big/small the content above it 
+<body class="h-100">
+    <!-- html, body, and main elements all set to 100% height using bootstrap.  This will ensure that the footer aligns with the very bottom of the page, no matter how big/small the content above it 
         also note, margin auto on all sides, and 0 padding.  Flex-column required, as the container is a flex box and will want to push everything horizontally-->
-        <main class="cover-container d-flex w-100 h-100 p-0 mx-auto flex-column">
+    <main class="cover-container d-flex w-100 h-100 p-0 mx-auto flex-column">
 
 
-            <!-- Header
+        <!-- Header
             will have my header, including my name, and the nav bar.
             will always fill the space, but will push the nav bar to a second row if under ~760px-->
-            <header class="bg-light sticky-top">
-                <!-- everything sits in a container "inner" to center it along the top, and add margins to the sides of the headd-->
-                <div class="inner container-md row p-0">
-                    <!-- my name-->
-                    <div class="brand col-md-5 orange p-0 m-0">
-                        <h1 class="text-light text-center ">
-                            Brian Fairbanks
-                        </h1>
-                    </div>
-                    <!-- my navbar -->
-                    <!-- according to bootstrap documentation, navbar needs .navebar and .navbar-expand-[size]-->
-                    <nav class="navbar navbar-expand-md col-md justify-content-center justify-content-md-end">
-                        <ul class="nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="portfolio.html">Portfolio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="contact.html">Contact</a>
-                            </li>
-                        </ul>
-                    </nav>
+        <header class="bg-light sticky-top">
+            <!-- everything sits in a container "inner" to center it along the top, and add margins to the sides of the headd-->
+            <div class="inner container-md row p-0">
+                <!-- my name-->
+                <div class="brand col-md-5 orange p-0 m-0">
+                    <h1 class="text-light text-center ">
+                        Brian Fairbanks
+                    </h1>
                 </div>
-            </header>
+                <!-- my navbar -->
+                <!-- according to bootstrap documentation, navbar needs .navebar and .navbar-expand-[size]-->
+                <nav class="navbar navbar-expand-md col-md justify-content-center justify-content-md-end">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
 
 
-            <!--Row 1 - main
+        <!--Row 1 - main
                 This box will be the only one that changes between the different files-->
-                <article class="m-0 mt-sm-3 mb-sm-3">
-                    <div class="container bg-light content pt-3 pb-3"> <!-- main-->
-                    <!--Section heading-->
-                    <h2>Contact Me</h2>
-                    <hr>
-                    <!--Section description-->
-                    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact me directly. I would love to get back to you as soon as I can.</p>
+        <article class="m-0 mt-sm-3 mb-sm-3">
+            <div class="container bg-light content pt-3 pb-3">
+                <!-- main-->
+                <!--Section heading-->
+                <h2>Contact Me</h2>
+                <hr>
+                <!--Section description-->
 
-                                <!-- https://mdbootstrap.com/docs/jquery/forms/contact/ -->
-                    <section class="mb-4">
-                    
-                        <div class="row">
-                    
-                            <!--Grid Email Contact -->
-                            <div class="col-md-8 mb-md-0 mb-5">
-                                <form id="contact-form" name="contact-form" action="mail.php" method="POST">    <!-- I assume the plan is to add php to this when we get into the backend later on -->
-                    
-                                    <!--Grid row for your information-->
-                                    <div class="row">
-                    
-                                        <!--Grid column for your name-->
-                                        <div class="col-md-6">
-                                            <div class="md-form mb-0">
-                                                <input type="text" id="name" name="name" class="form-control">
-                                                <label for="name" class="">Your name</label>
-                                            </div>
-                                        </div>
-                    
-                                        <!--Grid column for return email address-->
-                                        <div class="col-md-6">
-                                            <div class="md-form mb-0">
-                                                <input type="text" id="email" name="email" class="form-control">
-                                                <label for="email" class="">Your email</label>
-                                            </div>
-                                        </div>
-                    
-                                    </div>
-                    
-                                    <!--Grid row  for email subject-->
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="md-form mb-0">
-                                                <input type="text" id="subject" name="subject" class="form-control">
-                                                <label for="subject" class="">Subject</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                    
-                                    <!--Grid row for message-->
-                                    <div class="row">
-                    
-                                        <!--Grid column for message-->
-                                        <div class="col-md-12">
-                    
-                                            <div class="md-form">
-                                                <textarea id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                                                <label for="message">Your message</label>
-                                            </div>
-                    
-                                        </div>
-                                    </div>
-                    
-                                </form>
-                                <!-- Button to Submit Contact Form -->
-                                <div class="text-center text-center">
-                                    <a class="btn btn-secondary" onclick="document.getElementById('contact-form').submit();">Send</a> <!-- setting up for the javascript to send via with ajax later -->
-                                </div>
-                                <div class="status"></div>
-                            </div>
+                <!-- https://mdbootstrap.com/docs/jquery/forms/contact/ -->
+                <section class="mb-4">
 
+                    <div class="row">
 
-                    
-                            <!--Grid column for My information -->
-                            <div class="col-md-4 text-center">
-                                <section class="row">
-                                    <figure class="col-12 m-0 p-0">
-                                        <i class="fas fa-map-marker-alt fa-2x d-inline-block d-md-block"></i>
-                                        <span class="col-md-12 col-sm-10">Pflugerville, TX, 78660, USA</span>
-                                    </figure>
-                    
-                                    <figure class="col-12 m-0 p-0">
-                                        <i class="fas fa-phone mt-4 fa-2x d-inline-block d-md-block"></i>
-                                        <span class="col-md-12 col-sm-10">+1 (512) 789 - 4483</span>
-                                    </figure>
-                    
-                                    <figure class="col-12 m-0 p-0">
-                                        <i class="fas fa-envelope mt-4 fa-2x d-inline-block d-md-block"></i>
-                                        <span class="col-md-12 col-sm-10">brian.k.fairbanks@gmail.com</span>
-                                    </figure>
-                                </section>
-                            </div>                    
+                        <!--Grid Email Contact -->
+                        <div class="col-md-8 mb-md-0 mb-5">
+                            <p class="text-center w-responsive mx-auto mt-5 ">Do you have any questions? Are you looking for for an employee like me? Please do not hesitate to contact me directly. I would love to get back to you as soon as I can.</p>
                         </div>
 
-                        <!-- Other Website Icons -->
-                        <div class="card mt-5 p-0 bg-light">
-                            <div class="card-body d-flex justify-content-center justify-content-md-around p-0">
-                                <!-- Linked In -->
-                                <figure class="br-1">
-                                    <a target="_blank" href="https://www.linkedin.com/in/bkfairbanks/">
-                                        <i class="fab fa-linkedin fa-3x fa-icon-only p-1"></i>
-                                    </a>
-                                </figure>
-                                <!-- GitHub -->
-                                <figure class="">
-                                    <a target="_blank" href="https://github.com/Brian-Fairbanks">
-                                        <i class="fab fa-github fa-3x fa-icon-only p-1"></i>
-                                    </a>
-                                </figure>
-                                <!-- FaceBook -->
-                                <figure class="">
-                                    <a target="_blank" href="https://www.facebook.com/BKFairbanks">
-                                        <i class="fab fa-facebook-square fa-3x fa-icon-only p-1"></i>
-                                    </a>
-                                </figure>
-                                <!-- Resume -->
-                                <figure class="">
-                                    <a target="_blank" href="Assets/Brian_Fairbanks_resume_04082020.pdf" download>
-                                        <i class="fas fa-file fa-3x fa-icon-only p-1"></i>
-                                    </a>
+
+
+                        <!--Grid column for My information -->
+                        <div class="col-md-4 text-center">
+                            <section class="row">
+                                <figure class="col-12 m-0 p-0">
+                                    <i class="fas fa-map-marker-alt fa-2x d-inline-block d-md-block"></i>
+                                    <span class="col-md-12 col-sm-10">Pflugerville, TX, 78660, USA</span>
                                 </figure>
 
+                                <figure class="col-12 m-0 p-0">
+                                    <i class="fas fa-phone mt-4 fa-2x d-inline-block d-md-block"></i>
+                                    <span class="col-md-12 col-sm-10">+1 (512) 789 - 4483</span>
+                                </figure>
 
-                            </div>     
-                        </div>               
-                    </section>
+                                <figure class="col-12 m-0 p-0">
+                                    <i class="fas fa-envelope mt-4 fa-2x d-inline-block d-md-block"></i>
+                                    <span class="col-md-12 col-sm-10">brian.k.fairbanks@gmail.com</span>
+                                </figure>
+                            </section>
+                        </div>
+                    </div>
+
+                    <!-- Other Website Icons -->
+                    <div class="card mt-5 p-0 bg-light">
+                        <div class="card-body d-flex justify-content-center justify-content-md-around p-0">
+                            <!-- Linked In -->
+                            <figure class="br-1">
+                                <a target="_blank" href="https://www.linkedin.com/in/bkfairbanks/">
+                                    <i class="fab fa-linkedin fa-3x fa-icon-only p-1"></i>
+                                </a>
+                            </figure>
+                            <!-- GitHub -->
+                            <figure class="">
+                                <a target="_blank" href="https://github.com/Brian-Fairbanks">
+                                    <i class="fab fa-github fa-3x fa-icon-only p-1"></i>
+                                </a>
+                            </figure>
+                            <!-- FaceBook -->
+                            <figure class="">
+                                <a target="_blank" href="https://www.facebook.com/BKFairbanks">
+                                    <i class="fab fa-facebook-square fa-3x fa-icon-only p-1"></i>
+                                </a>
+                            </figure>
+                            <!-- Resume -->
+                            <figure class="">
+                                <a target="_blank" href="Assets/Brian_Fairbanks_resume_04082020.pdf" download>
+                                    <i class="fas fa-file fa-3x fa-icon-only p-1"></i>
+                                </a>
+                            </figure>
 
 
-
-
-                </div>
-            </article>
-
-            <!-- row 2 - footer
-            -->
-            <footer class="mastfoot orange mt-auto pt-2">
-                <section class="inner text-center brown text-light p-3">
-                    <h6>&copy; Copyright 2020</h6>
+                        </div>
+                    </div>
                 </section>
-            </footer>
-        </main>
 
-         <!-- JS -->
-         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        <!-- Font Awesome used for Icons -->
-        <script src="https://kit.fontawesome.com/9aa3b96097.js" crossorigin="anonymous"></script>
- 
-        <!-- close out all tags -->
-    </body>
+
+
+
+            </div>
+        </article>
+
+        <!-- row 2 - footer
+            -->
+        <footer class="mastfoot orange mt-auto pt-2">
+            <section class="inner text-center brown text-light p-3">
+                <h6>&copy; Copyright 2020</h6>
+            </section>
+        </footer>
+    </main>
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <!-- Font Awesome used for Icons -->
+    <script src="https://kit.fontawesome.com/9aa3b96097.js" crossorigin="anonymous"></script>
+
+    <!-- close out all tags -->
+</body>
+
 </html>
